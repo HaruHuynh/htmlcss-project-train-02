@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Common */
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.content {
+    width: 1170px;
+    min-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 25px;
+    background: #171100;
+}
+
+/* Header */
+.fixed-header {
+    padding-top: 36px;
+    position: sticky;
+    z-index: 1;
+    top: -36px;
+    background: #f4d78a;
+}
+
+.navbar {
+    display: flex;
+}
