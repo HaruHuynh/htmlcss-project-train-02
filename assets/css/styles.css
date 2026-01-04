@@ -15,7 +15,7 @@ body {
 
 .content {
     width: 1170px;
-    min-width: calc(100% - 48px);
+    max-width: calc(100% - 48px);
     margin-left: auto;
     margin-right: auto;
 }
@@ -36,5 +36,10 @@ body {
 }
 
 .navbar {
+    display: flex;
+    background: #bfbcbc;
+}
+
+.nav-links {
     display: flex;
 }
