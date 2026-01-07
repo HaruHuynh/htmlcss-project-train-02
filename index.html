@@ -199,7 +199,7 @@
                                 </p>
                                 <div class="price-cta">
                                     <span class="money">$120.75</span>
-                                    <div class="btn">Book Now</div>
+                                    <div class="btn cta">Book Now</div>
                                 </div>
                             </div>
                         </div>
@@ -227,7 +227,7 @@
                                 </p>
                                 <div class="price-cta">
                                     <span class="money">$120.75</span>
-                                    <div class="btn">Book Now</div>
+                                    <div class="btn cta">Book Now</div>
                                 </div>
                             </div>
                         </div>
@@ -255,13 +255,157 @@
                                 </p>
                                 <div class="price-cta">
                                     <span class="money">$120.75</span>
-                                    <div class="btn">Book Now</div>
+                                    <div class="btn cta">Book Now</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Feedback -->
+            <div class="feedback">
+                <div class="content">
+                    <div class="groups">
+                        <div class="profile">
+                            <div class="profile-cards">
+                                <div class="card card-1">
+                                    <img
+                                        src="./assets/img/feedback-avatar-1.jpg"
+                                        alt=""
+                                        class="avatar"
+                                    />
+                                    <p class="name">Peter Moor</p>
+                                    <p class="desc">Student of Web Design</p>
+                                </div>
+                                <div class="card card-2">
+                                    <img
+                                        src="./assets/img/feedback-avatar-2.jpg"
+                                        alt=""
+                                        class="avatar"
+                                    />
+                                    <p class="name">Sophie Lin</p>
+                                    <p class="desc">Product Designer</p>
+                                </div>
+                                <div class="card card-3">
+                                    <img
+                                        src="./assets/img/feedback-avatar-3.jpg"
+                                        alt=""
+                                        class="avatar"
+                                    />
+                                    <p class="name">Akira Tan</p>
+                                    <p class="desc">Frontend Developer</p>
+                                </div>
+                            </div>
+                            <div class="spot-menu">
+                                <div
+                                    class="dot dot-1"
+                                    aria-label="Profile 1"
+                                ></div>
+                                <div
+                                    class="dot dot-2"
+                                    aria-label="Profile 2"
+                                ></div>
+                                <div
+                                    class="dot dot-3"
+                                    aria-label="Profile 3"
+                                ></div>
+                            </div>
+                        </div>
+                        <div class="quote">
+                            <img
+                                src="./assets/icons/open-quotes.svg"
+                                alt=""
+                                class="quote-icon"
+                            />
+                            <p class="meaningful">
+                                Not only does my resume look impressive—filled
+                                with the names and logos of world-class
+                                institutions—but these certificates also bring
+                                me closer to my career goals by validating the
+                                skills I've learned."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features -->
+            <div class="features">
+                <div class="content">
+                    <div class="group-top">
+                        <div class="image-group">
+                            <img
+                                src="./assets/img/feature-1.jpg"
+                                alt=""
+                                class="image"
+                            />
+                            <img
+                                src="./assets/img/feature-2.jpg"
+                                alt=""
+                                class="image img-right"
+                            />
+                        </div>
+                        <div class="content-group">
+                            <p class="title">
+                                Learner outcomes through our awesome platform
+                            </p>
+                            <p class="subtitle">
+                                87% of people learning for professional
+                                development report career benefits like getting
+                                a promotion, a raise, or starting a new career.
+                            </p>
+                            <p class="desc">Lesson Impact Report (2022)</p>
+                            <div class="btn feature-button">Sign Up</div>
+                        </div>
+                    </div>
+
+                    <div class="group-bottom">
+                        <div class="content-group">
+                            <p class="title">
+                                Take the next step toward your personal and
+                                professional goals with Lesson.
+                            </p>
+                            <p class="subtitle">
+                                Take the next step toward. Join now to receive
+                                personalized and more recommendations from the
+                                full Coursera catalog.
+                            </p>
+                            <div class="btn feature-button">Join Now</div>
+                        </div>
+                        <div class="image-content">
+                            <img
+                                src="./assets/img/feature-2.jpg"
+                                alt=""
+                                class="image"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
+        <script>
+            // Chuyển profile theo dot trong phần Feedback (JS đơn giản)
+            document.addEventListener("DOMContentLoaded", function () {
+                const dots = document.querySelectorAll(".spot-menu .dot");
+                const cards = document.querySelectorAll(".profile-cards .card");
+
+                function setActive(index) {
+                    cards.forEach((card, i) => {
+                        card.classList.toggle("active", i === index);
+                    });
+                }
+
+                // Mặc định hiển thị card đầu tiên
+                setActive(0);
+
+                // Khi hover vào dot nào thì hiện card tương ứng
+                dots.forEach((dot, index) => {
+                    dot.addEventListener("mouseenter", () => {
+                        setActive(index);
+                    });
+                });
+            });
+        </script>
     </body>
 </html>

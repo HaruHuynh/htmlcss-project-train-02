@@ -29,6 +29,7 @@ body {
     padding: 0 24px;
     border-radius: 25px;
     background: #171100;
+    cursor: pointer;
 }
 
 /* Header */
@@ -81,6 +82,7 @@ body {
 .nav-btn {
     min-width: 144px;
     margin-left: 70px;
+    transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 .nav-btn a {
@@ -207,7 +209,7 @@ body {
 .cta-group .cta {
     width: 180px;
     border-radius: 32px;
-    background: #ffb900;
+    transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 .cta-group .cta a {
@@ -215,6 +217,10 @@ body {
     color: #fff;
     font-size: 1.8rem;
     line-height: 1.67;
+}
+
+.cta-group .cta:hover {
+    background: #ffb900;
 }
 
 .cta-group .video-btn {
@@ -310,11 +316,13 @@ body {
     /* Fill background + keep border color when hovered */
     background: #ffb900;
     border-color: #ffb900;
+    cursor: pointer;
 }
 
 .heading .next-btn .chevron-left:hover svg path {
     /* Turn the arrow stroke to white on hover */
     stroke: #fff;
+    cursor: pointer;
 }
 
 .heading .next-btn .chevron-right {
@@ -333,11 +341,13 @@ body {
     /* Fill background + keep border color when hovered */
     background: #ffb900;
     border-color: #ffb900;
+    cursor: pointer;
 }
 
 .heading .next-btn .chevron-right:hover svg path {
     /* Turn the arrow stroke to white on hover */
     stroke: #fff;
+    cursor: pointer;
 }
 
 /* Course Lists */
@@ -403,4 +413,203 @@ body {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.85; /* 185.714% */
+}
+
+.course-list .price-cta {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.course-list .price-cta .money {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+.course-list .price-cta .cta {
+    width: 118px;
+    height: 50px;
+    margin-left: auto;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.course-list .price-cta .cta:hover {
+    background: #ffb900;
+}
+
+/* =====================================FEEDBACK===================================== */
+.feedback {
+    background: #2e2100;
+    padding: 96px 0;
+}
+
+.feedback .groups {
+    display: flex;
+}
+
+.feedback .profile {
+    position: relative;
+    width: 35%;
+}
+
+.feedback .profile .avatar {
+    display: block;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback .spot-menu {
+    margin-top: 28px;
+    display: flex;
+    gap: 12px;
+}
+
+.feedback .spot-menu .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #634700;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.feedback .spot-menu .dot:hover {
+    background: #ffb900;
+    transform: scale(1.1);
+}
+
+.feedback .profile-cards {
+    position: relative;
+    min-height: 150px;
+}
+
+.feedback .profile-cards .card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.feedback .profile-cards .card .name {
+    margin-top: 18px;
+    color: #fff;
+    font-family: Sen, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.41;
+}
+
+.feedback .profile-cards .card .desc {
+    margin-top: 4px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/* Hiển thị card đang active (mặc định card-1 sẽ được thêm class active bằng JS) */
+.feedback .profile-cards .card.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.feedback .quote {
+    width: 770px;
+    display: flex;
+    position: relative;
+}
+
+.feedback .quote .quote-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.feedback .groups .meaningful {
+    position: absolute;
+    bottom: 0;
+    margin-left: 30px;
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.53; /* 153.846% */
+}
+
+/* =====================================FEATURES===================================== */
+.features {
+    padding: 200px 0;
+    background: #eef5a8;
+}
+
+.features .group-top {
+    display: flex;
+}
+
+.features .image-group {
+    display: flex;
+    gap: 30px;
+}
+
+.features .image-group .image {
+    max-width: 270px;
+    height: 404px;
+    border-radius: 16px;
+}
+
+.features .image-group .img-right {
+    margin-top: -34px;
+}
+
+.features .content-group {
+    padding: 58px 0 58px 130px;
+}
+
+.features .content-group .title {
+    color: #171100;
+    font-family: Sen, sans-serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: -0.76px;
+}
+
+.features .content-group .subtitle,
+.features .content-group .desc {
+    margin-top: 16px;
+    color: #5f5b53;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.features .content-group .feature-button {
+    margin-top: 32px;
+    width: 137px;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.features .content-group .feature-button:hover {
+    background: #ffb900;
+}
+
+.group-bottom {
+    display: flex;
+    margin-top: 200px;
+}
+
+.group-bottom .content-group {
+    padding: 71px 130px 71px 0;
+}
+
+.group-bottom .image {
+    width: 470px;
+    height: 440px;
+    border-radius: 20px;
+    object-fit: cover;
 }
