@@ -383,26 +383,120 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Blog -->
+            <div class="blog">
+                <div class="content">
+                    <div class="blog-heading">
+                        <h3 class="title">Our blog</h3>
+                        <p class="subtitle">
+                            Read our regular travel blog and know the latest
+                            update of tour and travel
+                        </p>
+                    </div>
+                    <div class="blog-group">
+                        <div class="img-item active">
+                            <img
+                                src="./assets/img/blog-1.jpg"
+                                alt=""
+                                class="image"
+                            />
+                            <div class="info-item">
+                                <div class="date">21 November 2021</div>
+                                <div class="desc">
+                                    How to become a pro web designer in 2022 and
+                                    get remote job?
+                                </div>
+                                <div class="btn blog-button">Read More</div>
+                            </div>
+                        </div>
+                        <div class="img-item">
+                            <img
+                                src="./assets/img/blog-2.jpg"
+                                alt=""
+                                class="image"
+                            />
+                            <div class="info-item">
+                                <div class="date">21 November 2021</div>
+                                <div class="desc">
+                                    How to become a pro web designer in 2022 and
+                                    get remote job?
+                                </div>
+                                <div class="btn blog-button">Read More</div>
+                            </div>
+                        </div>
+                        <div class="img-item">
+                            <img
+                                src="./assets/img/blog-3.jpg"
+                                alt=""
+                                class="image"
+                            />
+                            <div class="info-item">
+                                <div class="date">21 November 2021</div>
+                                <div class="desc">
+                                    How to become a pro web designer in 2022 and
+                                    get remote job?
+                                </div>
+                                <div class="btn blog-button">Read More</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spot-menu blog-dots">
+                        <div class="dot dot-1"></div>
+                        <div class="dot dot-2"></div>
+                        <div class="dot dot-3"></div>
+                    </div>
+                </div>
+            </div>
         </main>
         <script>
-            // Chuyển profile theo dot trong phần Feedback (JS đơn giản)
+            // Chuyển profile theo dot trong phần Feedback
             document.addEventListener("DOMContentLoaded", function () {
-                const dots = document.querySelectorAll(".spot-menu .dot");
-                const cards = document.querySelectorAll(".profile-cards .card");
+                // Feedback section
+                const feedbackDots = document.querySelectorAll(
+                    ".feedback .spot-menu .dot"
+                );
+                const feedbackCards = document.querySelectorAll(
+                    ".profile-cards .card"
+                );
 
-                function setActive(index) {
-                    cards.forEach((card, i) => {
+                function setFeedbackActive(index) {
+                    feedbackCards.forEach((card, i) => {
                         card.classList.toggle("active", i === index);
                     });
                 }
 
                 // Mặc định hiển thị card đầu tiên
-                setActive(0);
+                setFeedbackActive(0);
 
                 // Khi hover vào dot nào thì hiện card tương ứng
-                dots.forEach((dot, index) => {
+                feedbackDots.forEach((dot, index) => {
                     dot.addEventListener("mouseenter", () => {
-                        setActive(index);
+                        setFeedbackActive(index);
+                    });
+                });
+
+                // Blog section - transition blog items
+                const blogDots = document.querySelectorAll(
+                    ".blog .spot-menu .dot"
+                );
+                const blogItems = document.querySelectorAll(
+                    ".blog-group .img-item"
+                );
+
+                function setBlogActive(index) {
+                    blogItems.forEach((item, i) => {
+                        item.classList.toggle("active", i === index);
+                    });
+                }
+
+                // Mặc định hiển thị blog item đầu tiên
+                setBlogActive(0);
+
+                // Khi hover vào dot nào thì hiện blog item tương ứng
+                blogDots.forEach((dot, index) => {
+                    dot.addEventListener("mouseenter", () => {
+                        setBlogActive(index);
                     });
                 });
             });

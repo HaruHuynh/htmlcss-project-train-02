@@ -469,8 +469,8 @@ body {
 }
 
 .feedback .spot-menu .dot {
-    width: 12px;
-    height: 12px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
     background: #634700;
     cursor: pointer;
@@ -612,4 +612,125 @@ body {
     height: 440px;
     border-radius: 20px;
     object-fit: cover;
+}
+
+/* =====================================BLOG===================================== */
+.blog {
+    padding: 96px 0;
+    background: #b6f8cc;
+}
+
+.blog-heading {
+    text-align: center;
+}
+
+.blog-heading .title {
+    color: #171100;
+    font-family: Sen, sans-serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: -0.76px;
+}
+
+.blog-heading .subtitle {
+    margin-top: 16px;
+    color: #5f5b53;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.blog-group {
+    display: flex;
+    margin-top: 55px;
+    gap: 30px;
+}
+
+.blog-group .image {
+    width: 370px;
+    height: 250px;
+    border-radius: 16px 16px 0 0;
+    object-fit: cover;
+}
+
+.blog-group .img-item:hover {
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.05);
+}
+
+.blog-group .info-item {
+    padding: 20px 20px 28px 20px;
+    background: #fff;
+    border-radius: 0 0 16px 16px;
+}
+
+.blog-group .info-item .date {
+    color: #5f5b53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    display: flex; /* Use flexbox to align the dot and date text */
+    align-items: center;
+    gap: 4px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e2e2e2;
+    /* margin-bottom: 10px; */
+}
+
+.blog-group .info-item .date::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #ffb900;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.blog-group .info-item .desc {
+    margin-top: 12px;
+    max-width: 330px;
+    color: #171100;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
+
+.blog-group .info-item .blog-button {
+    margin-top: 12px;
+    width: 124px;
+    border-radius: 25px;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.blog-group .info-item .blog-button:hover {
+    background: #ffb900;
+}
+
+.blog .spot-menu {
+    margin-top: 38px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.blog .spot-menu .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #5f5b53;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.blog .spot-menu .dot:hover {
+    background: #ffb900;
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.blog-group .img-item {
+    opacity: 0.6;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for opacity and transform */
+}
+
+.blog-group .img-item.active {
+    opacity: 1; /* Fully opaque for the active item */
+    transform: scale(1.05); /* Slightly enlarge the active item */
 }
