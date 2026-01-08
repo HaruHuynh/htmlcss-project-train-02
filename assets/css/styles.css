@@ -9,6 +9,13 @@ html {
 }
 
 /* Common */
+:root {
+    --primary-color: #ffb900;
+    --transition: background 0.2s ease, border-color 0.2s ease;
+    --transition-scale: background 0.2s ease, transform 0.2s ease;
+    --font-sen: Sen, sans-serif;
+}
+
 body {
     font-family: "Poppins", sans-serif;
 }
@@ -82,7 +89,7 @@ body {
 .nav-btn {
     min-width: 144px;
     margin-left: 70px;
-    transition: background 0.2s ease, border-color 0.2s ease;
+    transition: var(--transition);
 }
 
 .nav-btn a {
@@ -95,7 +102,7 @@ body {
 }
 
 .nav-btn:hover {
-    background: #ffb900;
+    background: var(--primary-color);
 }
 
 /* Hero */
@@ -183,7 +190,7 @@ body {
 .content-block .heading {
     width: 470px;
     color: #171100;
-    font-family: "Sen", sans-serif;
+    font-family: var(--font-sen);
     font-size: 58px;
     font-style: normal;
     font-weight: 700;
@@ -209,7 +216,7 @@ body {
 .cta-group .cta {
     width: 180px;
     border-radius: 32px;
-    transition: background 0.2s ease, border-color 0.2s ease;
+    transition: var(--transition);
 }
 
 .cta-group .cta a {
@@ -220,7 +227,7 @@ body {
 }
 
 .cta-group .cta:hover {
-    background: #ffb900;
+    background: var(--primary-color);
 }
 
 .cta-group .video-btn {
@@ -261,7 +268,7 @@ body {
 
 .content-block .stats strong {
     color: #171100;
-    font-family: Sen, sans-serif;
+    font-family: var(--font-sen);
     font-size: 44px;
     font-weight: 700;
     padding: 0 8px 0 28px;
@@ -279,7 +286,7 @@ body {
 
 .heading .title {
     color: #171100;
-    font-family: Sen, sans-serif;
+    font-family: var(--font-sen);
     font-size: 3.8rem;
     font-weight: 700;
     letter-spacing: -0.76px;
@@ -304,18 +311,18 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px solid #ffb900;
+    border: 1px solid var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
     /* Smooth color change on hover */
-    transition: background 0.2s ease, border-color 0.2s ease;
+    transition: var(--transition);
 }
 
 .heading .next-btn .chevron-left:hover {
     /* Fill background + keep border color when hovered */
-    background: #ffb900;
-    border-color: #ffb900;
+    background: var(--primary-color);
+    border-color: var(--primary-color);
     cursor: pointer;
 }
 
@@ -324,23 +331,25 @@ body {
     stroke: #fff;
     cursor: pointer;
 }
-
+.heading .next-btn svg path {
+    stroke: var(--primary-color);
+}
 .heading .next-btn .chevron-right {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px solid #ffb900;
+    border: 1px solid var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
     /* Smooth color change on hover */
-    transition: background 0.2s ease, border-color 0.2s ease;
+    transition: var(--transition);
 }
 
 .heading .next-btn .chevron-right:hover {
     /* Fill background + keep border color when hovered */
-    background: #ffb900;
-    border-color: #ffb900;
+    background: var(--primary-color);
+    border-color: var(--primary-color);
     cursor: pointer;
 }
 
@@ -368,7 +377,7 @@ body {
 .course-list .course:hover {
     background: #fff;
     box-shadow: 0 18px 36px 0 rgba(0, 0, 0, 0.05);
-    border: #fff;
+    border-color: #fff;
 }
 
 .course-list .course .image {
@@ -432,11 +441,11 @@ body {
     width: 118px;
     height: 50px;
     margin-left: auto;
-    transition: background 0.2s ease, border-color 0.2s ease;
+    transition: var(--transition);
 }
 
 .course-list .price-cta .cta:hover {
-    background: #ffb900;
+    background: var(--primary-color);
 }
 
 /* =====================================FEEDBACK===================================== */
@@ -474,11 +483,11 @@ body {
     border-radius: 50%;
     background: #634700;
     cursor: pointer;
-    transition: background 0.2s ease, transform 0.2s ease;
+    transition: var(--transition-scale);
 }
 
 .feedback .spot-menu .dot:hover {
-    background: #ffb900;
+    background: var(--primary-color);
     transform: scale(1.1);
 }
 
@@ -499,7 +508,7 @@ body {
 .feedback .profile-cards .card .name {
     margin-top: 18px;
     color: #fff;
-    font-family: Sen, sans-serif;
+    font-family: var(--font-sen);
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 1.41;
@@ -573,7 +582,7 @@ body {
 
 .features .content-group .title {
     color: #171100;
-    font-family: Sen, sans-serif;
+    font-family: var(--font-sen);
     font-size: 3.8rem;
     font-weight: 700;
     letter-spacing: -0.76px;
@@ -591,11 +600,11 @@ body {
 .features .content-group .feature-button {
     margin-top: 32px;
     width: 137px;
-    transition: background 0.2s ease, border-color 0.2s ease;
+    transition: var(--transition);
 }
 
 .features .content-group .feature-button:hover {
-    background: #ffb900;
+    background: var(--primary-color);
 }
 
 .group-bottom {
@@ -626,7 +635,7 @@ body {
 
 .blog-heading .title {
     color: #171100;
-    font-family: Sen, sans-serif;
+    font-family: var(--font-sen);
     font-size: 3.8rem;
     font-weight: 700;
     letter-spacing: -0.76px;
@@ -677,7 +686,7 @@ body {
     content: "";
     width: 6px;
     height: 6px;
-    background-color: #ffb900;
+    background-color: var(--primary-color);
     border-radius: 50%;
     flex-shrink: 0;
 }
@@ -700,11 +709,11 @@ body {
     margin-top: 12px;
     width: 124px;
     border-radius: 25px;
-    transition: background 0.2s ease, border-color 0.2s ease;
+    transition: var(--transition);
 }
 
 .blog-group .info-item .blog-button:hover {
-    background: #ffb900;
+    background: var(--primary-color);
 }
 
 .blog .spot-menu {
@@ -720,11 +729,11 @@ body {
     border-radius: 50%;
     background: #5f5b53;
     cursor: pointer;
-    transition: background 0.2s ease, transform 0.2s ease;
+    transition: var(--transition-scale);
 }
 
 .blog .spot-menu .dot:hover {
-    background: #ffb900;
+    background: var(--primary-color);
     transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
@@ -793,6 +802,7 @@ body {
 }
 
 .footer-group .footer-item .column-list a {
+    display: block;
     text-decoration: none;
     color: #bfbcb2;
     font-size: 1.4rem;
