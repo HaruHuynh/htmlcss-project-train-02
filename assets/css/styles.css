@@ -671,8 +671,6 @@ body {
     align-items: center;
     gap: 4px;
     padding-bottom: 12px;
-    border-bottom: 1px solid #e2e2e2;
-    /* margin-bottom: 10px; */
 }
 
 .blog-group .info-item .date::before {
@@ -682,6 +680,11 @@ body {
     background-color: #ffb900;
     border-radius: 50%;
     flex-shrink: 0;
+}
+.blog-group .info-item .blog-line {
+    width: 160px;
+    height: 1px;
+    background: #e2dfda;
 }
 
 .blog-group .info-item .desc {
@@ -733,4 +736,90 @@ body {
 .blog-group .img-item.active {
     opacity: 1; /* Fully opaque for the active item */
     transform: scale(1.05); /* Slightly enlarge the active item */
+}
+
+/* =====================================FOOTER===================================== */
+.footer {
+    padding: 96px 0 0 0;
+    background: #2e2100;
+}
+
+.footer-group {
+    display: flex;
+    margin-bottom: 36px;
+}
+
+.footer-group .item-contact {
+    width: 267px;
+    margin-right: 145px;
+}
+
+.footer-group .item-contact .desc {
+    margin-top: 18px;
+    width: 267px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+
+.footer-group .item-contact .social-media {
+    margin-top: 18px;
+    display: flex;
+    gap: 18px;
+    cursor: pointer;
+}
+
+.footer-group .footer-item {
+    width: 21.6%;
+}
+
+.footer-group .footer-item .list-name {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-bottom: 1px;
+    margin-bottom: 14px;
+}
+
+.footer-group .footer-item .list-line {
+    width: 130px;
+    height: 1px;
+    background: #e2dfda;
+}
+
+.footer-group .footer-item .column-list {
+    margin-top: 28px;
+}
+
+.footer-group .footer-item .column-list a {
+    text-decoration: none;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+
+.footer-group .footer-item .column-list a:not(:first-child) {
+    margin-top: 12px;
+}
+
+.footer-item .column-list strong {
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer-line {
+    width: 1170px;
+    height: 1px;
+    background: #e2dfda;
+}
+
+.copyright {
+    padding: 28px 0;
+    color: #807d74;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
 }
