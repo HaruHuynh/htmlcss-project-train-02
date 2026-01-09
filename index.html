@@ -5,7 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>F8-Project-02</title>
         <!-- Favicon -->
-        <link rel="icon" type="image/x-icon" href="./assets/favicon_io/favicon.ico" />
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="./assets/favicon_io/favicon.ico"
+        />
         <link
             rel="icon"
             type="image/png"
@@ -23,10 +27,7 @@
             sizes="180x180"
             href="./assets/favicon_io/apple-touch-icon.png"
         />
-        <link
-            rel="manifest"
-            href="./assets/favicon_io/site.webmanifest"
-        />
+        <link rel="manifest" href="./assets/favicon_io/site.webmanifest" />
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -49,21 +50,27 @@
         <header class="fixed-header">
             <div class="content">
                 <div class="navbar">
-                    <!-- Logo -->
-                    <img
-                        src="./assets/img/logo.svg"
-                        alt="Lesson."
-                        class="logo"
-                    />
-                    <ul class="nav-links">
-                        <li><a href="#!">Home</a></li>
-                        <li><a href="#!">Courses</a></li>
-                        <li><a href="#!">Pricing</a></li>
-                        <li><a href="#!">Reviews</a></li>
-                    </ul>
-                    <div class="btn nav-btn">
-                        <a href="#!">Sign Up</a>
-                    </div>
+                    <!-- Logo (link for keyboard users) -->
+                    <a href="#!" class="logo-link" aria-label="Homepage">
+                        <img
+                            src="./assets/img/logo.svg"
+                            alt="Lesson."
+                            class="logo"
+                        />
+                    </a>
+
+                    <!-- Navigation -->
+                    <nav class="nav" aria-label="Main navigation">
+                        <ul class="nav-links">
+                            <li><a href="#!">Home</a></li>
+                            <li><a href="#!">Courses</a></li>
+                            <li><a href="#!">Pricing</a></li>
+                            <li><a href="#!">Reviews</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Sign up as proper link/button -->
+                    <a href="#!" class="btn nav-btn">Sign Up</a>
                 </div>
             </div>
         </header>
@@ -77,6 +84,7 @@
                                 src="./assets/img/hero-img.jpg"
                                 alt="Learn without limits and spread knowledge."
                                 class="image"
+                                decoding="async"
                             />
                             <div class="media-summary">
                                 <div class="item">
@@ -201,6 +209,8 @@
                                 src="./assets/img/course-1.jpg"
                                 alt=""
                                 class="image"
+                                loading="lazy"
+                                decoding="async"
                             />
                             <div class="info">
                                 <div class="rate-row">
@@ -229,6 +239,8 @@
                                 src="./assets/img/course-2.jpg"
                                 alt=""
                                 class="image"
+                                loading="lazy"
+                                decoding="async"
                             />
                             <div class="info">
                                 <div class="rate-row">
@@ -257,6 +269,8 @@
                                 src="./assets/img/course-3.jpg"
                                 alt=""
                                 class="image"
+                                loading="lazy"
+                                decoding="async"
                             />
                             <div class="info">
                                 <div class="rate-row">
@@ -295,6 +309,8 @@
                                         src="./assets/img/feedback-avatar-1.jpg"
                                         alt=""
                                         class="avatar"
+                                        loading="lazy"
+                                        decoding="async"
                                     />
                                     <p class="name">Peter Moor</p>
                                     <p class="desc">Student of Web Design</p>
@@ -304,6 +320,8 @@
                                         src="./assets/img/feedback-avatar-2.jpg"
                                         alt=""
                                         class="avatar"
+                                        loading="lazy"
+                                        decoding="async"
                                     />
                                     <p class="name">Sophie Lin</p>
                                     <p class="desc">Product Designer</p>
@@ -313,6 +331,8 @@
                                         src="./assets/img/feedback-avatar-3.jpg"
                                         alt=""
                                         class="avatar"
+                                        loading="lazy"
+                                        decoding="async"
                                     />
                                     <p class="name">Akira Tan</p>
                                     <p class="desc">Frontend Developer</p>
@@ -360,11 +380,15 @@
                                 src="./assets/img/feature-1.jpg"
                                 alt=""
                                 class="image"
+                                loading="lazy"
+                                decoding="async"
                             />
                             <img
                                 src="./assets/img/feature-2.jpg"
                                 alt=""
                                 class="image img-right"
+                                loading="lazy"
+                                decoding="async"
                             />
                         </div>
                         <div class="content-group">
@@ -421,6 +445,10 @@
                                 src="./assets/img/blog-1.jpg"
                                 alt=""
                                 class="image"
+                                loading="lazy"
+                                decoding="async"
+                                width="370"
+                                height="250"
                             />
                             <div class="info-item">
                                 <div class="date">21 November 2021</div>
@@ -437,6 +465,10 @@
                                 src="./assets/img/blog-2.jpg"
                                 alt=""
                                 class="image"
+                                loading="lazy"
+                                decoding="async"
+                                width="370"
+                                height="250"
                             />
                             <div class="info-item">
                                 <div class="date">21 November 2021</div>
@@ -453,6 +485,10 @@
                                 src="./assets/img/blog-3.jpg"
                                 alt=""
                                 class="image"
+                                loading="lazy"
+                                decoding="async"
+                                width="370"
+                                height="250"
                             />
                             <div class="info-item">
                                 <div class="date">21 November 2021</div>
